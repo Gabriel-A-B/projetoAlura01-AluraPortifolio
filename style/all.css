@@ -1,0 +1,134 @@
+@charset "UTF-08";
+
+@font-face {
+    font-family: "Krona";
+    src: url(../font/KronaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;    
+    color: white;
+}
+
+.cabecalho {
+    margin: 5% 0% 0% 15%;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.cabecalho__menu__link:hover {
+    color: dodgerblue;
+    transition-duration: 0.5;
+}
+
+.conteiner {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.conteiner__conteudo {
+    width: 50%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    gap: 40px;
+}
+
+.conteiner__conteudo__titulo {
+    font-size: 2rem;
+    font-family: "Krona", Arial, Helvetica, sans-serif;
+}
+
+.conteiner__conteudo__destaque {
+    color: dodgerblue;
+}
+
+.conteiner__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.conteiner__conteudo__links__link {
+    border: 2px solid dodgerblue;
+    text-align: center;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: black;
+    color: white;
+    width: 230px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.conteiner__conteudo__links__link > img {
+    width: 20px;
+}
+
+.conteiner__conteudo__links__link:hover {
+    background-color: dodgerblue;
+    color: black;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+.rodape {
+    background-color: dodgerblue;
+    color: black;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .conteiner {
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-left: 30%;
+    }
+
+    .conteiner__conteudo {
+        width: auto;
+    }
+
+    img {
+        width: 100%
+    }
+}
